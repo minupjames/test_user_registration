@@ -22,7 +22,7 @@ class View:
         for contact in initial_contact_data:
             contact = Contacts(contact[0], contact[1], contact[2])
             self.contacts_list.append(contact)
-        
+
     def add_leads_to_list(self, initial_leads_data):
         """
         Adding initial leads to LeadsList
@@ -32,7 +32,7 @@ class View:
         for lead in initial_leads_data:
             lead = Leads(lead[0],lead[1],lead[2])
             self.leads_list.append(lead)
-    
+
     def validate_input(self, input_json):
         """
         Validates input registrant details
@@ -42,7 +42,7 @@ class View:
             reg_details = json.loads(input_json)
         except Exception as exc:
             raise Exception('Invalid input')
-        
+
         if reg_details is not None:
             registrant = reg_details.get('registrant', None)
             if registrant is not None:
@@ -53,13 +53,13 @@ class View:
                 raise Exception('Invaid input')
         else:
             raise Exception('Invalid input')
-            
+
         if phone is not None:
             if not phone.isnumeric():
                 raise Exception("Invalid Phone Number. Shouldn't have brackets, spaces or dashes")
             if len(phone) != 10:
                 raise Exception("Invalid Phone Number. It should have 10 digits")
-                     
+
         return name, email, phone
 
     def add_registrant(self, input_json):

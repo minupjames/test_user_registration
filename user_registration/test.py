@@ -1,7 +1,7 @@
 import json
 from registrant import View
-from test_data import initial_contact_data,initial_leads_data
-                    reg1, reg2, reg3, reg4
+from test_data import (initial_contact_data, initial_leads_data,
+                       reg1, reg2, reg3)
 
 view = View()
 #add initial contact data

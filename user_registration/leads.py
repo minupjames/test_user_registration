@@ -9,18 +9,18 @@ class Leads():
         self.name = name
         self.email = email
         self.phone = phone
-          
+
 class LeadsList(list):
     """
     LeadsList: List of Leads objects
     """
-         
+
     def __init__(self):
         """
         Initializes LeadsList
         """
-        super(LeadsList, self).__init__()   
-        
+        super(LeadsList, self).__init__()
+
     def get_leads_by_email(self, email):
         """
         Search Leadslist by email and return leads object on a successful match
@@ -50,11 +50,12 @@ class LeadsList(list):
         if lead is None and phone is not None:
             lead = self.get_leads_by_phone(phone)
         return lead
-        
+
     def print_lead_details(self):
         """
         Print Current Lead lists
         """
-        print('LeadsList Details')
+        print('\nLeads Details')
+        print('-'*13)
         for lead in self:
             print(lead.name, lead.email, lead.phone)

@@ -9,7 +9,7 @@ class Contacts():
         self.name = name
         self.email = email
         self.phone = phone
-    
+
     def update(self, name, email, phone):
         """
         Update the existing contact object when name, email or phone modified
@@ -20,12 +20,11 @@ class Contacts():
             self.email = email
         if phone is not None and self.phone != phone:
             self.phone = phone
-        
+
 class ContactsList(list):
     """
     ContactsList: List of Contact objects
     """
-    
     def __init__(self):
         """
         Initializes ContactsList
@@ -40,7 +39,7 @@ class ContactsList(list):
             if contact.email == email:
                 return contact
         return None
-    
+
     def get_contact_by_phone(self, phone):
         """
         Search ContactsList by phone and return contact object on a successful match
@@ -49,10 +48,10 @@ class ContactsList(list):
             if contact.phone == phone:
                 return contact
         return None
-        
+
     def get_contact(self, email, phone):
         """
-        Checks ContactsList by email and then phone  
+        Checks ContactsList by email and then phone
         & returns contact object if it matches
         """
         contact = None
@@ -61,11 +60,12 @@ class ContactsList(list):
         if contact is None and phone is not None:
             contact = self.get_contact_by_phone(phone)
         return contact
-    
+
     def print_details(self):
         """
         Print Current contact lists
         """
-        print('Contacts Details')
+        print('\nContacts Details')
+        print('-'*16)
         for contact in self:
-            print(contact.name, contact.email, contact.phone)            
+            print(contact.name, contact.email, contact.phone)

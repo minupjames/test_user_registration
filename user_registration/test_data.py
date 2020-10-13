@@ -5,7 +5,7 @@ initial_contact_data = [
         ('Doug Emerty' ,None ,4564445556),
         ('Egan Fair', 'eg@fairness.com', 5675556667)
                ]
-               
+
 initial_leads_data = [
         (None , 'kevin@keith.com' , None),
         ('Lucy' , 'lucy@liu.com' , 3210001112),
@@ -16,25 +16,25 @@ initial_leads_data = [
 
 reg1 = {
             "registrant": {
-                "name": "Lucy Liu", 
-                "email": "lucy@liu.com", 
+                "name": "Lucy Liu",
+                "email": "lucy@liu.com",
                 "phone": None
             }
-            
+
         }
 reg2 = {
             "registrant": {
-                "name": "Doug", 
-                "email": "doug@emmy.com", 
-                "phone": 4564445556
+                "name": "Doug",
+                "email": "doug@emmy.com",
+                "phone": "4564445556"
             }
-            
+
         }
 reg3 = {
             "registrant": {
-                "name": "Uma Thurman", 
-                "email": "uma@thurs.com", 
+                "name": "Uma Thurman",
+                "email": "uma@thurs.com",
                 "phone": None
             }
-            
+
         }
