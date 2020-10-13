@@ -1,4 +1,4 @@
-These module contains following files
+These module contains following files:
     1. contact.py
        This file implements two Classes: 'Contacts' and 'ContactsList'.
        Contacts Class stores name, email and phone of the contact person.
