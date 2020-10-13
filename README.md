@@ -13,3 +13,6 @@ These module contains following files.
     - This file implements functions to test the user registration functionality. The functionalities are exposed via a View class.
 5. test_data.py
     - This file contains test data for test.py
+    
+To run the program, clone the module and run:
+   >> python3 test.py
