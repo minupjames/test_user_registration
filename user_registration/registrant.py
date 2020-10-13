@@ -75,14 +75,14 @@ class View:
             if lead is not None:
                 #remove from leads list, delete leads object
                 #create new contact and add to contact list
-                contact = Contacts(lead.name, lead.email, lead.phone)    
+                contact = Contacts(lead.name, lead.email, lead.phone)
                 contact.update(name, email, phone)
                 self.leads_list.remove(lead)
                 del lead
             else:
                 #create new contact and add to contact list
-                contact = Contacts(name, phone, email)
-            self.contacts_list.append(contact)      
+                contact = Contacts(name, email, phone)
+            self.contacts_list.append(contact)
         else:
             #Update Contact if required. 
             contact.update(name, email, phone)
