@@ -11,17 +11,17 @@ view.add_contact_to_list(initial_contact_data)
 view.add_leads_to_list(initial_leads_data)
 
 #print initial LeadsList
-view.leads_list.print_lead_details()
+view.print_leads()
+
 #print initial ContactsList
-view.contacts_list.print_details()
+view.print_contacts()
 
 # Add/Update regstrant details
 view.add_registrant(json.dumps(reg1))
 view.add_registrant(json.dumps(reg2))
 view.add_registrant(json.dumps(reg3))
 
-view.contacts_list.print_details()
-
-view.leads_list.print_lead_details()
+view.print_contacts()
+view.print_leads()
 
 

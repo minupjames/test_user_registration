@@ -62,6 +62,18 @@ class View:
 
         return name, email, phone
 
+    def print_leads(self):
+        """
+        Print Leads details
+        """
+        self.leads_list.print_lead_details()
+
+    def print_contacts(self):
+        """
+        Print Leads details
+        """
+        self.contacts_list.print_details()
+
     def add_registrant(self, input_json):
         """
         Validates input and add/update registrant details into contact
