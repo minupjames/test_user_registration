@@ -8,8 +8,8 @@ These module contains following files.
     Leads Class stores name, email and phone of the contact person.
     LeadsList Class stores list of instances of Leads Objects.
 3. registrant.py
-    - This file contains Class 'View' to add/update registrant deatils into Contacts
+    - This file contains Class 'View' to add/update registrant details into Contacts. 
 4. test.py
-    - This files uses View functions to Add/Update regstrant details and to print Leads and Contacts
+    - This file implements functions to test the user registration functionality. The functionalities are exposed via a View class.
 5. test_data.py
-    - This file contains test data for Contacts, Leads and Registration.
+    - This file contains test data for test.py
